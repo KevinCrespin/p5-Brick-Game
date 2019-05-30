@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Brick Breaker</title>
+  <style>
+    * {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
+
+    body {
+      background-color: #282B3C;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    button {
+      color: #FFFFFF;
+      font-size: 40px;
+      border: 0px;
+      -webkit-animation: jump 1.5s ease 30s 5 normal;
+      animation: jump 1.5s ease 30s 10 normal;
+    }
+
+    button:focus {
+      outline: 0px;
+    }
+
+    button:active {
+      outline: none;
+      border: none;
+    }
+
+    @-webkit-keyframes jump {
+      40% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+      50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      60% {
+        -webkit-transform: translateY(-7.5px);
+        transform: translateY(-7.5px);
+      }
+      80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes jump {
+      40% {
+        transform: translateY(-15px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      60% {
+        transform: translateY(-7.5px);
+      }
+      80% {
+        transform: translateY(0);
+      }
+
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="src/BrickGame.js"></script>
+  <script src="src/Ball.js"></script>
+  <script src="src/Paddle.js"></script>
+  <script src="src/Brick.js"></script>
+  <script src="src/Level.js"></script>
+  <script src="src/Text.js"></script>
+</head>
+
+<body>
+</body>
+
+</html>
