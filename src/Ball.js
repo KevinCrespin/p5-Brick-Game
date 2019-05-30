@@ -17,7 +17,6 @@ class Ball {
     ellipse(this.posX, this.posY, this.radius, this.radius);
   }
 
-
   /**
    * @desc Increases ball's X and Y position to a pre-set speed
    */
@@ -26,7 +25,6 @@ class Ball {
     this.posX += this.speedX;
     this.posY += this.speedY;
   }
-
 
   /**
    * @desc Changes direction of ball if is in collision with a wall's hitbox
@@ -64,7 +62,6 @@ class Ball {
     return gameStarted;
   }
 
-
   /**
    * @desc Changes direction of ball if is in collision with the paddle's hitbox
    * @param object paddle
@@ -90,16 +87,13 @@ class Ball {
    * @return Boolean if ball is colliding with brick
    */
 
-
-  //TODO: GET ball X and Y position and + or - to ball X or Y position the X or Y ball speed respectivly, in order to get PAST position
-  //TODO: based on boundaries change X, Y (or both) ball direction
   isCollidingWithBrick(brick) {
     if ((this.posY >= brick.posY - (this.radius / 2)) && (this.posY <= brick.posY + brick.brickH + (this.radius / 2)) && (this.posX >= brick.posX - (this.radius / 2)) && (this.posX <= brick.posX + brick.brickW + (this.radius / 2))) {
       let tmpPosX;
       let tmpPosY;
       // Get position prior collision
       // Going TR
-      if (this.speedX > 0 && this.speedY < 0) { 
+      if (this.speedX > 0 && this.speedY < 0) {
         tmpPosX = this.posX - Math.abs(this.speedX);
         tmpPosY = this.posY + Math.abs(this.speedY);
       }
@@ -177,5 +171,4 @@ class Ball {
       this.posY += 5;
     }
   }
-
 }
