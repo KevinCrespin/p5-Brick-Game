@@ -8,11 +8,11 @@ Download this repository and open index.html in your browser.
 
 ### Controls 
 
-(Move Right) Right Arrow, D, Num Pad 6
-(Move Left) Left Arrow, A, Num Pad 4
-(Start Game) Space
-(Pause Game) Enter
-(Restart Game) R
+(Move Right) Right Arrow, D, Num Pad 6 <br>
+(Move Left) Left Arrow, A, Num Pad 4 <br>
+(Start Game) Space <br>
+(Pause Game) Enter <br>
+(Restart Game) R <br>
 
 ## Installed Dependencies
 
