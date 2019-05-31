@@ -2,11 +2,11 @@
 
 Brick Game using p5.js library
 
-## How to play
+### How to play
 
 Download this repository and open index.html in your browser. 
 
-## Controls 
+### Controls 
 
 (Move Right) Right Arrow, D, Num Pad 6
 (Move Left) Left Arrow, A, Num Pad 4
