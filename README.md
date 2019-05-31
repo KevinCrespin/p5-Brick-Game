@@ -1,6 +1,18 @@
 # p5-BrickGame
 
-Brick Game using p5.js library.
+Brick Game using p5.js library
+
+## How to play
+
+Download this repository and open index.html in your browser. 
+
+## Controls 
+
+(Move Right) Right Arrow, D, Num Pad 6
+(Move Left) Left Arrow, A, Num Pad 4
+(Start Game) Space
+(Pause Game) Enter
+(Restart Game) R
 
 ## Installed Dependencies
 
