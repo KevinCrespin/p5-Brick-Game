@@ -11,8 +11,6 @@ Download this repository and open index.html in your browser.
 (Move Right) Right Arrow, D, Num Pad 6 <br>
 (Move Left) Left Arrow, A, Num Pad 4 <br>
 (Start Game) Space <br>
-(Pause Game) Enter <br>
-(Restart Game) R <br>
 
 ### Screen Shots 
 
