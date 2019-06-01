@@ -14,6 +14,7 @@ Download this repository and open index.html in your browser.
 (Pause Game) Enter <br>
 (Restart Game) R <br>
 
+### Screen Shots 
 
 ![Game Example](BrickGame.gif)
 
