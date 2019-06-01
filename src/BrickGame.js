@@ -156,6 +156,6 @@ function draw() {
 
   // Info redirect
   info.mousePressed(function changeBG() {
-    window.open('https://github.com/KevinCrespin');
+    window.open('https://github.com/KevinCrespin/p5-BrickGame');
   });
 }
