@@ -2,9 +2,9 @@
 
 Brick Game using p5.js library
 
-### How to play
+### Play it!
 
-Download this repository and open index.html in your browser. 
+https://kevincrespin.github.io/p5-BrickGame/
 
 ### Controls 
 
