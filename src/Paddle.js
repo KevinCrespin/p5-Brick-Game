@@ -1,5 +1,4 @@
 class Paddle {
-
   constructor(posX, posY, paddleW, paddleH) {
     this.posX = posX;
     this.posY = posY;
@@ -15,11 +14,10 @@ class Paddle {
   }
 
   /**
-   * @desc Increases/Decreases paddle's X position to player's control / Increases/Decreases ball's X position if game haven't started yet
-   * @param Integer paddleMinPosX, paddleMaxPosX - paddle position limits
-   * @param Boolean gameStarted - Game state
+   * @desc Increases/Decreases paddle's X position & Increases/Decreases ball's X position if level haven't started yet
+   * @param Integer paddleMinPosX, paddleMaxPosX
+   * @param Boolean gameStarted
    * @param Object ball
-   * @return Do nothing if player wants to move off limits
    */
 
   control(paddleMinPosX, paddleMaxPosX, ball, gameStarted) {
@@ -44,5 +42,4 @@ class Paddle {
       }
     }
   }
-
 }

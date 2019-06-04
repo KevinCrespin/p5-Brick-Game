@@ -1,5 +1,4 @@
 class Level {
-
     constructor() {
         this.level = 1;
         this.levelStarted = 1;
@@ -8,7 +7,7 @@ class Level {
     }
 
     /**
-     * @desc Creates a pattern of bricks for each level
+     * @desc Creates level's brick pattern
      * @param Array bricks
      * @param Integer brickW, bricksH
      */
@@ -150,7 +149,7 @@ class Level {
     }
 
     /**
-     * @desc Modifies properties of level (ball X and Y speed, paddle X speed, bg color)
+     * @desc Modifies level's properties
      * @param Object ball, paddle
      * @param Boolean runOnce, gameStarted
      */

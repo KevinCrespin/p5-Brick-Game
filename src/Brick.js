@@ -1,5 +1,4 @@
 class Brick {
-
     constructor(posX, posY, brickW, brickH) {
         this.posX = posX;
         this.posY = posY;
@@ -13,5 +12,4 @@ class Brick {
         stroke(sc);
         rect(this.posX, this.posY, this.brickW, this.brickH);
     }
-
 }

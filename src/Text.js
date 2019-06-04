@@ -1,5 +1,4 @@
 class Text {
-
     constructor(letter, posX, displacement) {
         this.letter = letter;
         this.posX = posX;
@@ -28,14 +27,15 @@ class Text {
     }
 
     /**
-     * @desc Increases letter's Y position to a pre-set Y speed
+     * @desc Increases/Decreases letter's Y position
      */
+
     move() {
         this.posY += this.speedY;
     }
 
     /**
-     * @desc Changes Y direction of letter if is in collision with maxY or minY position
+     * @desc Changes letter's Y direction
      */
 
     bounce() {
