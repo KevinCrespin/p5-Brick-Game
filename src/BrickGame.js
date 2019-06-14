@@ -2,6 +2,8 @@ let rectW = 200;
 let rectH = 400;
 
 let ball;
+let tmpBallSpeedX;
+let tmpBallSpeedY;
 let ballMinPosX = -rectW;
 let ballMinPosY = -rectH;
 let ballMaxPosX = rectW;
@@ -16,6 +18,7 @@ let bricksW = 51.2;
 let bricksH = 20;
 
 let gameStarted = 1;
+let gamePaused = 1;
 let runOnce;
 let level;
 
@@ -25,7 +28,8 @@ let bc2;
 let letters = [];
 let beep;
 let info;
-
+let git;
+let leaderboard;
 let increaseLevel;
 let decreaseLevel;
 
@@ -35,20 +39,20 @@ function setup() {
   level = new Level();
   paddle = new Paddle(-40, ballMaxPosY - 50, 80, 8);
   ball = new Ball(paddle);
-  beep = new Audio('sounds/collisionPaddle.wav');
+  beep = new Audio("sounds/collisionPaddle.wav");
 
-  letters.push(new Text('G', -145, 2));
-  letters.push(new Text('A', -105, 4));
-  letters.push(new Text('M', -70, 3));
-  letters.push(new Text('E', -30, 2));
-  letters.push(new Text('O', 20, 3));
-  letters.push(new Text('V', 55, 4));
-  letters.push(new Text('E', 85, 1));
-  letters.push(new Text('R', 115, 2));
+  letters.push(new Text("G", -145, 2));
+  letters.push(new Text("A", -105, 4));
+  letters.push(new Text("M", -70, 3));
+  letters.push(new Text("E", -30, 2));
+  letters.push(new Text("O", 20, 3));
+  letters.push(new Text("V", 55, 4));
+  letters.push(new Text("E", 85, 1));
+  letters.push(new Text("R", 115, 2));
 
-  info = createButton('ⓘ', 1);
-  increaseLevel = createButton('↑', 1);
-  decreaseLevel = createButton('↓', 1);
+  info = createButton("ⓘ", 1);
+  increaseLevel = createButton("↑", 1);
+  decreaseLevel = createButton("↓", 1);
 }
 
 function windowResized() {
@@ -56,23 +60,12 @@ function windowResized() {
 }
 
 function draw() {
-  bc = color('#282B3C');
+  bc = color("#282B3C");
   background(bc);
 
   // Create level
   level.checker(bricks, bricksW, bricksH);
   runOnce = level.modifier(runOnce, gameStarted, ball, paddle);
-
-  // Start level
-  if (key === ' ' && ball.lives >= 0) {
-    if (gameStarted == 1) {
-      ball.speedX = 4;
-      ball.speedY = -4;
-      gameStarted = 0;
-      runOnce = 1;
-      key = 'a';
-    }
-  }
 
   // Next level
   if (bricks.length == 0) {
@@ -114,12 +107,12 @@ function draw() {
 
   ball.score = ball.score + Math.abs(0.5 * Math.abs(ball.speedX) / 3);
   text(Math.round(ball.score), 218, -300);
-  text('Level ' + level.level, 218, -360);
+  text("Level " + level.level, 218, -360);
   textSize(40);
 
   // Lives
   if (ball.lives > -1) {
-    text(' x ' + ball.lives, 266, 391);
+    text(" x " + ball.lives, 266, 391);
   } else {
     // Game over
     for (let i = letters.length - 1; i >= 0; i--) {
@@ -127,51 +120,83 @@ function draw() {
       letters[i].move();
       letters[i].bounce();
     }
-    text(' x 0', 266, 391);
+    text(" x 0", 266, 391);
   }
 
   fill(bc2);
   ellipse(245, 378, 40, 40);
 
-  // Info
-  info.style('background-color', bc);
-  info.position(20, 10);
-  info.mouseOver(function hover() {
-    info.style('color', bc2);
-  });
-  info.mouseOut(function hover() {
-    info.style('color', color(255));
-  })
-  info.mousePressed(function changeBackground() {
-    window.open('https://github.com/KevinCrespin/p5-BrickGame');
-  });
+  // Buttons
+  button(info, 20, 10, "info");
+  button(increaseLevel, 80, 10, "increaseLevel");
+  button(decreaseLevel, 100, 10, "decreaseLevel");
 
-  increaseLevel.style('background-color', bc);
-  increaseLevel.position(80, 10);
-  increaseLevel.mouseOver(function hover() {
-    increaseLevel.style('color', bc2);
-  });
-  increaseLevel.mouseOut(function hover() {
-    increaseLevel.style('color', color(255));
-  })
-  increaseLevel.mousePressed(function increaseLevel() {
-    if (level.level <= 8) {
-      bricks = [];
+}
+
+/**
+ * @desc Game Controls (Excluding paddle cotrol)
+ */
+
+function keyPressed() {
+  if (key === "p") {
+    if (gamePaused == 1) {
+      tmpBallSpeedX = ball.speedX;
+      tmpBallSpeedY = ball.speedY;
+      gamePaused = 0;
     }
-  });
+    ball.speedX = 0;
+    ball.speedY = 0;
+  }
+  if (key === "u") {
+    ball.speedX = tmpBallSpeedX;
+    ball.speedY = tmpBallSpeedY;
+    gamePaused = 1;
+  }
+  if (key === "r") {
+    location.reload();
+  }
+  if (key === " " && ball.lives >= 0) {
+    if (gameStarted == 1) {
+      ball.speedX = 4;
+      ball.speedY = -4;
+      gameStarted = 0;
+      runOnce = 1;
+    }
+  }
+}
 
-  decreaseLevel.style('background-color', bc);
-  decreaseLevel.position(100, 10);
-  decreaseLevel.mouseOver(function hover() {
-    decreaseLevel.style('color', bc2);
+/**
+ * @desc Creates buttons
+ * @param Button button
+ * @param Integer posX, posY
+ * @param String operation
+ */
+
+function button(button, posX, posY, operation) {
+  button.style("background-color", bc);
+  button.position(posX, posY);
+  button.mouseOver(function hoverIn() {
+    button.style("color", bc2);
   });
-  decreaseLevel.mouseOut(function hover() {
-    decreaseLevel.style('color', color(255));
+  button.mouseOut(function hoverOut() {
+    button.style("color", color(255));
   })
-  decreaseLevel.mousePressed(function decreaseLevel() {
-    if (level.level >= 2) {
-      level.level = level.level - 2;
-      bricks = [];
+  button.mousePressed(function clicked() {
+    switch (operation) {
+      case "info":
+        window.open("https://github.com/KevinCrespin/p5-BrickGame");
+        break;
+      case "increaseLevel":
+        if (level.level <= 8) {
+          bricks = [];
+        }
+        break;
+      case "decreaseLevel":
+        if (level.level >= 2) {
+          level.level = level.level - 2;
+          bricks = [];
+        }
+        break;
     }
   });
 }

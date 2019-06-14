@@ -1,0 +1,22 @@
+{
+  "name": "brickgamep5.js",
+  "version": "1.0.0",
+  "description": "BrickGame on p5.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinCrespin/p5-BrickGame.git"
+  },
+  "author": "Kevin Crespin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KevinCrespin/p5-BrickGame/issues"
+  },
+  "homepage": "https://github.com/KevinCrespin/p5-BrickGame#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}

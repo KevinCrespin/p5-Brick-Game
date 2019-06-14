@@ -33,7 +33,7 @@ class Ball {
     if (this.posX <= ballMinPosX) {
       this.speedX = -this.speedX;
       this.posX = ballMinPosX;
-    } else if (this.posX >= ballMaxPosX) { 
+    } else if (this.posX >= ballMaxPosX) {
       this.speedX = -this.speedX
       this.posX = ballMaxPosX
     }
@@ -91,16 +91,13 @@ class Ball {
       if (this.speedX > 0 && this.speedY < 0) {
         tmpPosX = this.posX - Math.abs(this.speedX);
         tmpPosY = this.posY + Math.abs(this.speedY);
-      }
-      else if (this.speedX > 0 && this.speedY > 0) {
+      } else if (this.speedX > 0 && this.speedY > 0) {
         tmpPosX = this.posX - Math.abs(this.speedX);
         tmpPosY = this.posY - Math.abs(this.speedY);
-      }
-      else if (this.speedX < 0 && this.speedY > 0) {
+      } else if (this.speedX < 0 && this.speedY > 0) {
         tmpPosX = this.posX + Math.abs(this.speedX);
         tmpPosY = this.posY - Math.abs(this.speedY);
-      }
-      else if (this.speedX < 0 && this.speedY < 0) {
+      } else if (this.speedX < 0 && this.speedY < 0) {
         tmpPosX = this.posX + Math.abs(this.speedX);
         tmpPosY = this.posY + Math.abs(this.speedY);
       }
