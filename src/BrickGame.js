@@ -78,6 +78,16 @@ function draw() {
     gameStarted = 1;
   }
 
+  // Start Game
+  if (key === " " && ball.lives >= 0) {
+    if (gameStarted == 1) {
+      ball.speedX = 4;
+      ball.speedY = -4;
+      gameStarted = 0;
+      runOnce = 1;
+    }
+  }
+
   fill(bc2);
   rect((windowWidth - rectW * 2) / 2 - ball.radius / 2 - 100, (windowHeight - rectH * 2) / 2 - ball.radius / 2, (rectW * 2) + ball.radius, (rectH * 2) + ball.radius);
 
@@ -154,14 +164,6 @@ function keyPressed() {
   }
   if (key === "r") {
     location.reload();
-  }
-  if (key === " " && ball.lives >= 0) {
-    if (gameStarted == 1) {
-      ball.speedX = 4;
-      ball.speedY = -4;
-      gameStarted = 0;
-      runOnce = 1;
-    }
   }
 }
 

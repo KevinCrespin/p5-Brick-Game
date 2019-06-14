@@ -169,7 +169,7 @@ class Level {
     modifier(runOnce, gameStarted, ball, paddle) {
         switch (this.level) {
             case 1: {
-                bc2 = color('#F44336');
+                bc2 = color("#F44336");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 1;
                     ball.speedY *= 1;
@@ -179,7 +179,7 @@ class Level {
                 break;
             }
             case 2: {
-                bc2 = color('#FFA100');
+                bc2 = color("#FFA100");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 1.14;
                     ball.speedY *= 1.14;
@@ -189,7 +189,7 @@ class Level {
                 break;
             }
             case 3: {
-                bc2 = color('#E91E63');
+                bc2 = color("#E91E63");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 1.28;
                     ball.speedY *= 1.28;
@@ -199,7 +199,7 @@ class Level {
                 break;
             }
             case 4: {
-                bc2 = color('#763BDF');
+                bc2 = color("#763BDF");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 1.42;
                     ball.speedY *= 1.42;
@@ -209,7 +209,7 @@ class Level {
                 break;
             }
             case 5: {
-                bc2 = color('#00BAF0');
+                bc2 = color("#00BAF0");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 1.56;
                     ball.speedY *= 1.56;
@@ -219,7 +219,7 @@ class Level {
                 break;
             }
             case 6: {
-                bc2 = color('#8BDB4A');
+                bc2 = color("#8BDB4A");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 1.70;
                     ball.speedY *= 1.70;
@@ -229,17 +229,17 @@ class Level {
                 break;
             }
             case 7: {
-                bc2 = color('#FFEB3B');
+                bc2 = color("#FFEB3B");
                 if (runOnce == 1 && gameStarted == 0) {
-                    ball.speedX *= 1.94;
-                    ball.speedY *= 1.94;
+                    ball.speedX *= 1.70;
+                    ball.speedY *= 1.70;
                     paddle.paddleSpeed *= 1.15;
                     return 0;
                 }
                 break;
             }
             case 8: {
-                bc2 = color('#F9690E');
+                bc2 = color("#F9690E");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 2;
                     ball.speedY *= 2;
@@ -249,7 +249,7 @@ class Level {
                 break;
             }
             case 9: {
-                bc2 = color('#F03434');
+                bc2 = color("#F03434");
                 if (runOnce == 1 && gameStarted == 0) {
                     ball.speedX *= 2.3;
                     ball.speedY *= 2.3;
