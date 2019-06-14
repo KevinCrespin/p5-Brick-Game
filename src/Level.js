@@ -231,8 +231,8 @@ class Level {
             case 7: {
                 bc2 = color("#FFEB3B");
                 if (runOnce == 1 && gameStarted == 0) {
-                    ball.speedX *= 1.70;
-                    ball.speedY *= 1.70;
+                    ball.speedX *= 1.94;
+                    ball.speedY *= 1.94;
                     paddle.paddleSpeed *= 1.15;
                     return 0;
                 }
