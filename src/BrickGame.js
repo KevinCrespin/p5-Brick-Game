@@ -1,5 +1,5 @@
-let rectW = 200;
-let rectH = 400;
+const rectW = 200;
+const rectH = 400;
 
 let ball;
 let tmpBallSpeedX;
@@ -14,8 +14,8 @@ let paddleMinPosX = -rectW;
 let paddleMaxPosX = rectW;
 
 let bricks = [];
-let bricksW = 51.2;
-let bricksH = 20;
+const bricksW = 51.2;
+const bricksH = 20;
 
 let gameStarted = 1;
 let gamePaused = 1;
