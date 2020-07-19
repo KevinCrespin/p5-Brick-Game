@@ -1,4 +1,4 @@
-# p5-BrickGame
+# p5-Brick-Game
 
 Brick Game using the p5.js library
 
