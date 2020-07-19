@@ -3,7 +3,7 @@
 Brick Game using p5.js library
 
 ### Play it!
-## WARNING: This game is meant to be played on full screen mode on a web browser and it cannot be played on phones or tablets. Please, press F11 on your keyboard to enter full screen mode or zoom out the page until no game assets are off screen. Thank you!
+# WARNING: This game is meant to be played on full screen mode on a web browser and it cannot be played on phones or tablets. Please, press F11 on your keyboard to enter full screen mode or zoom out the page until no game assets are off screen. Thank you!
 https://kevincrespin.github.io/p5-BrickGame/
 
 ### Controls 
