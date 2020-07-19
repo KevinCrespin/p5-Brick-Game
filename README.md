@@ -14,6 +14,8 @@ https://kevincrespin.github.io/p5-BrickGame/
 (Pause) P <br>
 (Unpause) U <br>
 (Restart) R <br>
+(Increase leverl) Press the "↑" icon located at the top-left corner <br>
+(Decrease leverl) Press the "↓" icon located at the top-left corner <br>
 
 ### Screen Shots 
 
