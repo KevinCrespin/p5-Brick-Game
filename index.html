@@ -6,28 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <title>Brick Breaker</title>
   <style>
-    * {
+
+    body, html{
       position: relative;
-      padding: 0;
-      margin: 0;
-      top: 0;
-      left: 0;
-    }
-
-    body {
+      padding: 0px;
+      margin: 0px;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      min-height: 100%;
+      overflow: hidden;
       background-color: #282B3C;
-    }
-
-    canvas {
-      display: block;
     }
 
     button {
       color: #FFFFFF;
       font-size: 40px;
       border: 0px;
-      -webkit-animation: jump 1.5s ease 30s 5 normal;
-      animation: jump 1.5s ease 30s 10 normal;
     }
 
     button:focus {
@@ -39,46 +34,6 @@
       border: none;
     }
 
-    @-webkit-keyframes jump {
-      40% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-      }
-
-      50% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-
-      60% {
-        -webkit-transform: translateY(-7.5px);
-        transform: translateY(-7.5px);
-      }
-
-      80% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes jump {
-      40% {
-        transform: translateY(-15px);
-      }
-
-      50% {
-        transform: translateY(0);
-      }
-
-      60% {
-        transform: translateY(-7.5px);
-      }
-
-      80% {
-        transform: translateY(0);
-      }
-
-    }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>

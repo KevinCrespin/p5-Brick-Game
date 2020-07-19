@@ -2,7 +2,7 @@ class Text {
     constructor(letter, posX, displacement) {
         this.letter = letter;
         this.posX = posX;
-        this.speedY = 1;
+        this.speedY = 0.35;
         if (displacement == 1) {
             this.posY = 0;
             this.maxY = 5;

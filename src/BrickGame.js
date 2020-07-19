@@ -28,13 +28,9 @@ let bc2;
 let letters = [];
 let beep;
 let info;
-let git;
-let leaderboard;
-let increaseLevel;
-let decreaseLevel;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - windowWidth * 0.1, windowHeight - windowHeight * 0.005);
 
   level = new Level();
   paddle = new Paddle(-40, ballMaxPosY - 50, 80, 8);
@@ -56,7 +52,8 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth - windowWidth * 0.1, windowHeight - windowHeight * 0.005);
+  info = createButton("ⓘ", 1);
 }
 
 function draw() {
@@ -137,42 +134,20 @@ function draw() {
   ellipse(245, 378, 40, 40);
 
   // Buttons
-  button(info, 20, 10, "info");
+  button(info, 20, 15, "info");
   button(increaseLevel, 80, 10, "increaseLevel");
-  button(decreaseLevel, 100, 10, "decreaseLevel");
-
+  button(decreaseLevel, 110, 10, "decreaseLevel");
 }
 
 /**
- * @desc Game Controls (Excluding paddle cotrol)
+ * @desc (Restart) Option
  */
 
-function keyPressed() {
-  if (key === "p") {
-    if (gamePaused == 1) {
-      tmpBallSpeedX = ball.speedX;
-      tmpBallSpeedY = ball.speedY;
-      gamePaused = 0;
-    }
-    ball.speedX = 0;
-    ball.speedY = 0;
-  }
-  if (key === "u") {
-    ball.speedX = tmpBallSpeedX;
-    ball.speedY = tmpBallSpeedY;
-    gamePaused = 1;
-  }
+function keyPressed(){
   if (key === "r") {
     location.reload();
   }
 }
-
-/**
- * @desc Creates buttons
- * @param Button button
- * @param Integer posX, posY
- * @param String operation
- */
 
 function button(button, posX, posY, operation) {
   button.style("background-color", bc);
@@ -182,7 +157,7 @@ function button(button, posX, posY, operation) {
   });
   button.mouseOut(function hoverOut() {
     button.style("color", color(255));
-  })
+  });
   button.mousePressed(function clicked() {
     switch (operation) {
       case "info":

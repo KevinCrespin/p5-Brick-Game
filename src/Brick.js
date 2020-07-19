@@ -8,7 +8,7 @@ class Brick {
 
     display(bc, sc) {
         fill(bc);
-        strokeWeight(3);
+        strokeWeight(2.25);
         stroke(sc);
         rect(this.posX, this.posY, this.brickW, this.brickH);
     }
