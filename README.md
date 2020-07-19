@@ -33,3 +33,4 @@ https://kevincrespin.github.io/p5-Brick-Game/
 * The bricks' collision box behaves unconstently and it may generate akward situations.
 * Most of the game assets positions are hard-coded, which makes screen responsiveness impossible due to how p5.js library works.
 * The game was meant to be played on full-screen, and only on full screen; the game reads your screen resolution and uses it to create all the game assets acordingly. If not on full screen mode, the game appears to be off-screen.
+* There is an existent bug. When the you lose the ball without moving the paddle since you start the game, the ball doesn't pause for your command to start the game.
