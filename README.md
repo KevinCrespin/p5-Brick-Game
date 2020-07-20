@@ -28,10 +28,7 @@ https://kevincrespin.github.io/p5-Brick-Game/
 
 ## Complications
 
-* The game doesn't contain a complex set of physics, the ball just changes direction x and y when it collides with another object.
-* The speed of the ball doesn't change, unless a new level in reached.
-* The bricks' collision box behaves unconstently and it may generate akward situations.
-* Most of the game assets positions are hard-coded, which makes screen responsiveness impossible due to how p5.js library works.
-* The game was meant to be played on full-screen, and only on full screen; the game reads your screen resolution and uses it to create all the game assets acordingly. If not on full screen mode, the game appears to be off-screen.
-* There is an existent bug. When the you lose the ball without moving the paddle since you start the game, the ball doesn't pause for your command to start the game in the next life.
-* Levels were not exhaustedly tested, and the speed of the ball may be ackward in high levels and destroy many bricks in consequence. 
+* The game doesn't contain a complex set of physics which makes gameplay strightfoward, since the ball just changes x and y direction when it collides with an object.
+* The bricks' collision box behaves unconstently and it may generate akward situations, especially on higher levels of the games on which the speed of the ball can be 2.3 times faster than the first level. 
+* Most of the game assets positions are hard-coded, which makes screen responsiveness impossible. A fix can be implemented by using percentages instead if pixel locations, but it means that the game should be recoded entirely, but I pass.
+* The game can only on full-screen, and only on full screen. If not on full screen mode, the game appears to be off-screen.
