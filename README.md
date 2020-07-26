@@ -8,12 +8,12 @@ https://kevincrespin.github.io/p5-Brick-Game/
 
 ### Controls
 
-    (Move Right) Right Arrow, D, Num Pad 6 <br>
-    (Move Left) Left Arrow, A, Num Pad 4 <br>
-    (Start Game) Space <br>
-    (Restart) R <br>
-    (Increase level) Press the "↑" icon located at the top-left corner <br>
-    (Decrease level) Press the "↓" icon located at the top-left corner <br>
+    (Move Right)        Right Arrow, D, Num Pad 6
+    (Move Left)         Left Arrow, A, Num Pad 4
+    (Start Game)        Space
+    (Restart)           R
+    (Increase level)    Press the "↑" icon located at the top-left corner
+    (Decrease level)    Press the "↓" icon located at the top-left corner
 
 ### Screen Shots
 
