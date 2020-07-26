@@ -7,7 +7,7 @@ Brick Game using the p5.js library
 https://kevincrespin.github.io/p5-Brick-Game/
 
 ### Controls
-
+.. code-block:: text
 (Move Right) Right Arrow, D, Num Pad 6 <br>
 (Move Left) Left Arrow, A, Num Pad 4 <br>
 (Start Game) Space <br>
