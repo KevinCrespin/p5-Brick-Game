@@ -29,6 +29,6 @@ https://kevincrespin.github.io/p5-Brick-Game/
 ## Complications
 
 * The game doesn't contain a complex set of physics which makes gameplay strightfoward, since the ball just changes x and y direction when it collides with an object.
-* The bricks' collision box behaves unconstently and it may generate akward situations, especially on higher levels of the games on which the speed of the ball can be 2.3 times faster than the first level. 
-* Most of the game assets positions are hard-coded, which makes screen responsiveness impossible. A fix can be implemented by using percentages instead if pixel locations, but it means that the game should be recoded entirely, but I pass.
-* The game can only on full-screen, and only on full screen. If not on full screen mode, the game appears to be off-screen.
+* The bricks' collision box behaves unconstently and it may generate akward situations, especially on higher levels of the games when the ball speed is high. 
+* Most of the game assets positions are hard-coded, which makes screen responsiveness impossible. A fix can be implemented but it means that the game should be recoded entirely, and I pass.
+* The game can only be played on full-screen, and only on full screen. If not on full screen mode, the game appears to be off-screen.
