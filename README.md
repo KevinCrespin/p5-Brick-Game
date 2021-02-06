@@ -28,6 +28,5 @@ https://kevincrespin.github.io/p5-Brick-Game/
 
 ## The problems
 
-* The game doesn't contain a complex set of physics or collision.
-* The game was meant to be a quick coding exersice just to try the [p5.js](http://p5js.org) library.
+* The game doesn't contain a complex set of physics or collisions.
 * The game can only be played on a web browser on full-screen mode since cross-platform compatability was not in mind when in development, and the project will most likely won't be revisited.
