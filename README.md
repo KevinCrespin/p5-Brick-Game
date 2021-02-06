@@ -1,6 +1,5 @@
-# p5-Brick-Game
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/400f0adf-fdab-4f5a-8108-6f3e6fbf4d01/deploy-status)](https://app.netlify.com/sites/p5-brick-breaker/deploys) <br> 
+# p5-Brick-Game
 
 Brick Game using the p5.js library
 
