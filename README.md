@@ -6,7 +6,6 @@ Build entirely with JavaScript, HTML, and CSS.<br>
 
 ### Play it!
 https://p5-brick-breaker.netlify.app/
-#### WARNING: This game was a coding exercise to test the [p5.js](http://p5js.org) library and it has screen compatabilities issues, the game is meant to be played on full screen mode on a web browser ONLY and it cannot be played on phones or tablets. For a better experience please press F11 on your keyboard to enter full screen mode or zoom out the page until no game assets are off screen. Thank you!
 
 ### Controls
 
