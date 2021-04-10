@@ -13,8 +13,8 @@ https://p5-brick-breaker.netlify.app/
     (Move Left)         Left Arrow, A, Num Pad 4
     (Start Game)        Space
     (Restart)           R
-    (Increase level)    Press the "↑" icon located at the top-left corner
-    (Decrease level)    Press the "↓" icon located at the top-left corner
+    (Increase level)    Click the "↑" icon located at the top-left corner
+    (Decrease level)    Click the "↓" icon located at the top-left corner
 
 ### Screen Shots
 
