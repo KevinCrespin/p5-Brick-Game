@@ -30,5 +30,5 @@ https://p5-brick-breaker.netlify.app/
 ## The problems
 
 * The game doesn't contain a complex set of physics or collisions.
-* The game can only be played on **screens wider than 800px** on a **web browser** on **full-screen mode** since screen responsiveness was not in mind when in development.
+* The game can only be played on **screens wider than 800px** on a **web browser** on **full-screen mode** since screen responsiveness was not in mind when in development (beginner error).
 * This project will likely **not** be revisited.
