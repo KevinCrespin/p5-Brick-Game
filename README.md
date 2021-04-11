@@ -28,7 +28,7 @@ https://p5-brick-breaker.netlify.app/
 
 ## Technologies Used
 
-* JavaScript ES5
+* JavaScript ES5, HTML, and CSS
 * P5.js
 * DOM Manipulation
 * HTML5 Canvas
