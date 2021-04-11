@@ -26,16 +26,9 @@ https://p5-brick-breaker.netlify.app/
 
 [p5.js](http://p5js.org) is a Javascript library with the goal of making coding accessible for artists, designers, educators, and beginners. It is a reinterpretation of [Processing](http://processing.org), by Casey Reas and Ben Fry, initiated by artist [Lauren McCarthy](http://www.lauren-mccarthy.com/).
 
-## The learned
+## Technologies Used
 
-* Fundamentals of JavaScript ES5.
-* Fundamentals of JavaScript Libraries.
-* Fundamentals of DOM manipulation.
-* Fundamentals of HTML5 Canvas.
-* Importance of Responsive Design.
-
-## The problems
-
-* The game doesn't contain a complex set of physics or collisions.
-* The game can only be played on **screens wider than 800px** on a **web browser** on **full-screen mode** since screen responsiveness was not in mind when in development (beginner error).
-* This project will likely **not** be revisited, but problems should be improved in later projects.
+* JavaScript ES5
+* P5.js
+* DOM Manipulation
+* HTML5 Canvas
