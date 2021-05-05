@@ -2,7 +2,6 @@
 # p5-Brick-Game
 
 Brick Game using the p5.js library.<br>
-Build entirely with JavaScript, HTML, and CSS.<br>
 
 ## Play it!
 https://p5-brick-breaker.netlify.app/
