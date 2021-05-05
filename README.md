@@ -28,6 +28,6 @@ https://p5-brick-breaker.netlify.app/
 ## Technologies Used
 
 * JavaScript
-* P5.js
+* p5.js
 * HTML
 * CSS
